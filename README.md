@@ -1,27 +1,56 @@
-# React + TypeScript + Vite
+# Todo_Ace
+Todo Ace is a simply advanced todo list application built with React 18 and TypeScript.
+# Todo Ace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Todo Ace is a simple todo list application built with React 18 and TypeScript.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add, edit, and delete tasks
+- Mark tasks as completed
+- Filter tasks by status
+- Responsive and user-friendly interface
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [React 18](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vite.com/)
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+1. Clone the repository:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```bash
+   git clone https://github.com/your-username/todo-ace.git
+   ```
+   ```bash
+   cd todo-ace
+   ```
+   ```bash
+   npm install
+   ```
+   ```bash
+   npm run dev
+   ```
+# Usage
+Add a new task by typing into the input field and pressing Enter.
+Edit a task by clicking on it and modifying the text.
+Mark a task as completed by clicking the checkbox next to it.
+Delete a task by clicking the delete button next to it.
+Use the filter options to view tasks based on their completion status.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute:
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature-name`
+3. Make your changes and commit them: `git commit -m 'Add new feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Create a pull request
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+make with ~~lust~~ love 💖 by @sameerkali
