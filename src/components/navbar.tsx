@@ -3,13 +3,13 @@ import { Link, useSearchParams } from 'react-router-dom';
 
 const Navbar = () => {
     const [searchParams] = useSearchParams();
-    let todos̥Data = searchParams.get("todos");
+    const todosData = searchParams.get("todos");
     
   return (
-   <nav>
-    <Link to="/" className={todos̥Data === null ? "active" : ""} > All </Link>
-    <Link to="/?todos=active" className={todos̥Data === "active" ? "active" : ""} > Active </Link>
-    <Link to="/?todos=completed" className={todos̥Data === "completed" ? "active" :""} > Completed </Link>
+   <nav className='nav-responsive'>
+    <Link to="/" className={todosData === null ? "active " : ""} > All </Link>
+    <Link to="/?todos=active" className={todosData === "active" ? "active " : ""} > Active </Link>
+    <Link to="/?todos=completed" className={todosData === "completed" ? "active " :""} > Completed </Link>
    </nav>
   )
 }

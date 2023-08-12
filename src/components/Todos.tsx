@@ -19,11 +19,11 @@ const Todos = () => {
   }
 
   return (
-    <ul className="main-task">
+    <ul className="main-task ">
       {filterData.map(todo => {
         return (
           <li key={todo.id}>
-            <input
+            <input className="check-box "
               type="checkbox"
               id={`todo-${todo.id}`}
               checked={todo.completed}
