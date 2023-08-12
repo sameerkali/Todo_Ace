@@ -1,12 +1,17 @@
-import AddTodo from './components/AddTodo';
+import AddToDo from "./components/addtodo"
+import Navbar from "./components/navbar"
+import Todos from "./components/todos"
+import "./App.css"
 
-const App = ():JSX.Element => {
+const App = () => {
   return (
-    <main>
-      <h1>todo list</h1>
-      <AddTodo />
-    </main>
-  );
-};
+   <main>
+      <h1>TODO REACT + TYPESCRIPT </h1>
+      <Navbar />
+      <AddToDo />
+      <Todos />
+   </main>
+  )
+}
 
-export default App;
+export default App

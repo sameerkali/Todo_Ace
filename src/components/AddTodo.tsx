@@ -1,22 +1,22 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-import { FormEvent, useState } from "react";
-import { useTodos } from "../store/Todos";
+import { FormEvent, useState } from "react"
+import { useTodos } from "../store/todos";
 
-const addTodo = (): JSX.Element => {
-  const [todo, setTodo] = useState<string>("");
-  const {handleAddToDo} = useTodos();
+const AddToDo = () => {
+    const[todo, setTodo] = useState("");
+    const {handleAddToDo} = useTodos();
+ 
+    const handleFormSubmit = (e:FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        handleAddToDo(todo)
+        setTodo("")
+    }
 
-  const handelFormSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    handleAddToDo(todo);
-    setTodo("");
-  };
   return (
-    <form onSubmit={handelFormSubmit}>
-      <input type="text" value={todo} onChange={e => setTodo(e.target.value)} />
-      <button type="submit">Add</button>
+    <form onSubmit={handleFormSubmit}>
+        <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)} />
+        <button type="submit">Add</button>
     </form>
-  );
-};
+  )
+}
 
-export default addTodo;
+export default AddToDo
